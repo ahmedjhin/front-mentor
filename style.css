@@ -214,6 +214,3 @@ button {
     font-size: 17px;
 }
 
-button:hover {
-    background-color:  hsl(252, 58%, 46%);
-}
