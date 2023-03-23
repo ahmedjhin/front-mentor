@@ -1,21 +1,19 @@
-@media (max-width: 375px) {
-    .main-container {
-        display: flex;
-        flex-direction: column;
-    }
-    .result-container {
-        border-radius: 0 0 30px 30px!important; 
-    }
-  }
 
 
 
 body{ margin: 0;padding: 0;font-family: 'Hanken Grotesk','Roboto', sans-serif;}
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
 .main-container {margin: 0; display: flex; justify-content: center;
     align-items: center; height: 100vh;
+}
+
+.backgorund-wrap {
+    margin: 0; display: flex; justify-content: center;
+    align-items: center;
+    background-color:  rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow:  10px 5px 20px #888888;
 }
 .result-container,
 .status-container {
@@ -24,7 +22,7 @@ body{ margin: 0;padding: 0;font-family: 'Hanken Grotesk','Roboto', sans-serif;}
 }
 
 .result-container {background:linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-     border-radius: 28px; width: 340px; height: 490px;
+     border-radius: 28px; width: 368px; height: 512px;
 display: flex; flex-direction: column; align-items: center;}
 
 .result-container h2{
@@ -35,7 +33,8 @@ display: flex; flex-direction: column; align-items: center;}
 }
 
 .result {
-    margin-top:17px;
+    margin: 0px;
+    margin-top:40px;
     border-radius: 120px;
     width: 180px; height: 180px;
     background:linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
@@ -43,7 +42,6 @@ display: flex; flex-direction: column; align-items: center;}
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 0px;
 }
 
 .result h1 {
@@ -80,9 +78,8 @@ p {
 }
 
 .status-container {
-    background-color: rgb(231, 239, 247);
-    width: 350px; height: 480px;
-    box-shadow:  0.1px 6px  30px #888888;
+    background-color: rgb(255, 255, 255);
+    width: 368px; height: 512px;
     border-radius: 30px;
     justify-content: center;
     align-items: center;
@@ -104,7 +101,7 @@ p {
 .status-title h1 {
     font-size: 23px;
     text-align: left;
-    margin: 10px 0 18px 0px;
+    margin: 50px 0 30px 0px;
 }
 
 ul {
@@ -116,23 +113,24 @@ ul {
 
 li {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;  
-    max-width: 280px;
+    max-width: 287px;
     width: 100%!important;
-    height: 60px;
+    height: 50px;
     margin: 0 0 18px 0;
     list-style: none;
     background-color: azure;
     border-radius: 12px; 
     margin-right: 0!important;
+    margin-bottom: 15px!important;
 }
 
 li strong {
-    margin-left:10px;
+    margin-left:15px;
 }
 .numbers-div {
-    margin-right: 15px;
+    margin-right: 16px;
 }
 
 li .number {
@@ -150,11 +148,7 @@ li .rr {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
-}
-
-li .rr img{
-    width: 20px;
+    margin-left: 20px;
 }
 
 .div-li {
@@ -203,7 +197,7 @@ li:nth-child(4) .rr{
 }
 
 button {
-    margin-top: 15px;
+    margin-top: 41px;
     max-width: 280px;
     width: 100%;
     height: 50px;
@@ -216,4 +210,18 @@ button {
 
 button:hover {
     background-color:  hsl(252, 58%, 46%);
+    cursor: pointer;
 }
+.attribution {position: relative; bottom: 200px; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 375px) {
+    .backgorund-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    .result-container {
+        border-radius: 0 0 30px 30px!important; 
+    }
+    .attribution {position: relative; bottom: -80px;}
+  }
